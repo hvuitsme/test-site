@@ -4,7 +4,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Settings, Palette, ExternalLink, User, Bell } from "lucide-react"
-import { useSettings } from "@/contexts/settings-context"
+// import { useSettings } from "@/contexts/settings-context"
 // import { LANGUAGES } from "@/constants/settings"
 
 export function Header() {
