@@ -5,11 +5,11 @@ import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Settings, Palette, ExternalLink, User, Bell } from "lucide-react"
 import { useSettings } from "@/contexts/settings-context"
-import { LANGUAGES } from "@/constants/settings"
+// import { LANGUAGES } from "@/constants/settings"
 
 export function Header() {
   const pathname = usePathname()
-  const { settings } = useSettings()
+  // const { settings } = useSettings()
   // const currentLanguage = LANGUAGES.find((lang) => lang.code === settings.selectedLanguage)
 
   return (

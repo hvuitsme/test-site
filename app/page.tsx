@@ -5,7 +5,8 @@ import { Badge } from "@/components/ui/badge"
 import { Settings } from "lucide-react"
 import Link from "next/link"
 import { useSettings } from "@/contexts/settings-context"
-import { LANGUAGES, BACKGROUND_OPTIONS } from "@/constants/settings"
+import { LANGUAGES } from "@/constants/settings"
+// import { LANGUAGES, BACKGROUND_OPTIONS } from "@/constants/settings"
 
 export default function HomePage() {
   const { settings } = useSettings()
