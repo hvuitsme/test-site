@@ -10,7 +10,7 @@ import { LANGUAGES, BACKGROUND_OPTIONS } from "@/constants/settings"
 export default function HomePage() {
   const { settings } = useSettings()
   const currentLanguage = LANGUAGES.find((lang) => lang.code === settings.selectedLanguage)
-  const selectedBg = BACKGROUND_OPTIONS.find((bg) => bg.id === settings.selectedBackground)
+  // const selectedBg = BACKGROUND_OPTIONS.find((bg) => bg.id === settings.selectedBackground)
 
   return (
     <div className="text-center space-y-8 px-6">

@@ -8,7 +8,7 @@ interface PageTransitionProps {
 }
 
 export function PageTransition({ children }: PageTransitionProps) {
-  const pathname = usePathname()
+  // const pathname = usePathname()
   const [displayChildren, setDisplayChildren] = useState(children)
   const [transitionStage, setTransitionStage] = useState("fade-in")
 
