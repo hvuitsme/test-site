@@ -41,7 +41,7 @@ export default function SettingsPage() {
           </Button>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {/* Language Settings */}
           <LanguageSelector selectedLanguage={settings.selectedLanguage} onLanguageChange={updateLanguage} />
 
