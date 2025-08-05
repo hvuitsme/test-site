@@ -8,7 +8,7 @@ import { AppLayout } from "@/components/app-layout"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Anime Theme App",
+  title: "Settings App",
   description: "Ứng dụng với theme anime tùy chỉnh",
 }
 

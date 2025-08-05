@@ -17,7 +17,7 @@ export default function HomePage() {
     <div className="text-center space-y-8 px-6">
       <div className="space-y-4">
         <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-2xl">Welcome Home</h1>
-        <p className="text-xl text-white/90 drop-shadow-lg">Trang chủ với theme tùy chỉnh</p>
+        <p className="text-xl text-white/90 drop-shadow-lg">Trang chủ thử nghiệm với theme tùy chỉnh</p>
       </div>
 
       <div className="flex flex-col items-center gap-4">
