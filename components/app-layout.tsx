@@ -19,7 +19,10 @@ export function AppLayout({ children }: AppLayoutProps) {
   const isHomePage = pathname === "/"
 
   return (
-    <BackgroundWrapper backgroundUrl={selectedBg?.url || ""} blurAmount={settings.backgroundBlur}>
+    <BackgroundWrapper 
+      backgroundUrl={selectedBg?.url || ""} 
+      blurAmount={settings.backgroundBlur}
+      bgBrightness={settings.bgBrightness}>
       <Header />
       <main className={`${isHomePage ? "pt-20 overflow-hidden" : "pt-20 hide-scrollbar"}`}>
         {isHomePage ? (

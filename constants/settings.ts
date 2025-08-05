@@ -54,5 +54,6 @@ export const DEFAULT_SETTINGS = {
   selectedLanguage: "vi",
   selectedBackground: "anime1",
   backgroundBlur: 4,
+  bgBrightness: 100,
   hasChanges: false,
 }

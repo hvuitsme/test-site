@@ -9,6 +9,7 @@ interface SettingsContextType {
   updateLanguage: (language: string) => void
   updateBackground: (backgroundId: string) => void
   updateBlur: (blur: number[]) => void
+  updateBgBrightness: (bgBrightness: number[]) => void
   resetSettings: () => void
 }
 
@@ -63,6 +64,14 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     }))
   }, [])
 
+  const updateBgBrightness = useCallback((bgBrightness: number[]) => {
+    setSettings((prev) => ({
+      ...prev,
+      bgBrightness: bgBrightness[0],
+      hasChanges: true,
+    }))
+  }, [])
+
   const resetSettings = useCallback(() => {
     setSettings(DEFAULT_SETTINGS)
     localStorage.removeItem("app-settings")
@@ -75,6 +84,7 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
         updateLanguage,
         updateBackground,
         updateBlur,
+        updateBgBrightness,
         resetSettings,
       }}
     >

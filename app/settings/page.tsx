@@ -5,11 +5,12 @@ import { RotateCcw, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import { LanguageSelector } from "@/components/language-selector"
 import { BlurControl } from "@/components/blur-control"
+import { BrightnessControl } from "@/components/brightness-control"
 import { BackgroundSelector } from "@/components/background-selector"
 import { useSettings } from "@/contexts/settings-context"
 
 export default function SettingsPage() {
-  const { settings, updateLanguage, updateBackground, updateBlur, resetSettings } = useSettings()
+  const { settings, updateLanguage, updateBackground, updateBlur, updateBgBrightness, resetSettings } = useSettings()
 
   return (
     <div className="p-6 pb-12">
@@ -46,6 +47,9 @@ export default function SettingsPage() {
 
           {/* Blur Control */}
           <BlurControl blurAmount={settings.backgroundBlur} onBlurChange={updateBlur} />
+
+          {/* Brightness Control */}
+          <BrightnessControl bgBrightness={settings.bgBrightness} onBgBrightnessChange={updateBgBrightness} />
         </div>
 
         {/* Background Selection */}

@@ -15,5 +15,6 @@ export interface SettingsState {
   selectedLanguage: string
   selectedBackground: string
   backgroundBlur: number
+  bgBrightness: number
   hasChanges: boolean
 }

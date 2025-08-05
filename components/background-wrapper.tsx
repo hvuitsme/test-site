@@ -8,9 +8,10 @@ interface BackgroundWrapperProps {
   children: ReactNode
   backgroundUrl: string
   blurAmount: number
+  bgBrightness: number
 }
 
-function BackgroundWrapperComponent({ children, backgroundUrl, blurAmount }: BackgroundWrapperProps) {
+function BackgroundWrapperComponent({ children, backgroundUrl, blurAmount, bgBrightness }: BackgroundWrapperProps) {
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
@@ -31,7 +32,7 @@ function BackgroundWrapperComponent({ children, backgroundUrl, blurAmount }: Bac
         className="fixed inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url(${backgroundUrl})`,
-          filter: `blur(${blurAmount}px)`,
+          filter: `blur(${blurAmount}px) brightness(${bgBrightness}%)`,
           transform: "scale(1.1)",
         }}
       />
